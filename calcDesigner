@@ -1,0 +1,412 @@
+namespace Calculator2
+{
+    partial class MainForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.btn_7 = new System.Windows.Forms.Button();
+            this.btn_x = new System.Windows.Forms.Button();
+            this.btn_6 = new System.Windows.Forms.Button();
+            this.btn_5 = new System.Windows.Forms.Button();
+            this.btn_plus = new System.Windows.Forms.Button();
+            this.btn_3 = new System.Windows.Forms.Button();
+            this.btn_2 = new System.Windows.Forms.Button();
+            this.btn_1 = new System.Windows.Forms.Button();
+            this.btn_minus = new System.Windows.Forms.Button();
+            this.btn_equals = new System.Windows.Forms.Button();
+            this.btn_c = new System.Windows.Forms.Button();
+            this.btn_0 = new System.Windows.Forms.Button();
+            this.btn_8 = new System.Windows.Forms.Button();
+            this.btn_4 = new System.Windows.Forms.Button();
+            this.btn_divide = new System.Windows.Forms.Button();
+            this.btn_9 = new System.Windows.Forms.Button();
+            this.tb_input = new System.Windows.Forms.TextBox();
+            this.tb_history = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // btn_7
+            // 
+            this.btn_7.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_7.FlatAppearance.BorderSize = 0;
+            this.btn_7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_7.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_7.ForeColor = System.Drawing.Color.Black;
+            this.btn_7.Location = new System.Drawing.Point(256, 127);
+            this.btn_7.Name = "btn_7";
+            this.btn_7.Size = new System.Drawing.Size(54, 45);
+            this.btn_7.TabIndex = 1;
+            this.btn_7.Text = "7";
+            this.btn_7.UseVisualStyleBackColor = false;
+            this.btn_7.Click += new System.EventHandler(this.btn_7_Click);
+            // 
+            // btn_x
+            // 
+            this.btn_x.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_x.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_x.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_x.FlatAppearance.BorderSize = 0;
+            this.btn_x.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_x.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_x.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_x.ForeColor = System.Drawing.Color.Black;
+            this.btn_x.Location = new System.Drawing.Point(436, 178);
+            this.btn_x.Name = "btn_x";
+            this.btn_x.Size = new System.Drawing.Size(54, 45);
+            this.btn_x.TabIndex = 8;
+            this.btn_x.Text = "*";
+            this.btn_x.UseVisualStyleBackColor = false;
+            this.btn_x.Click += new System.EventHandler(this.btn_x_Click);
+            // 
+            // btn_6
+            // 
+            this.btn_6.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_6.FlatAppearance.BorderSize = 0;
+            this.btn_6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_6.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_6.ForeColor = System.Drawing.Color.Black;
+            this.btn_6.Location = new System.Drawing.Point(376, 178);
+            this.btn_6.Name = "btn_6";
+            this.btn_6.Size = new System.Drawing.Size(54, 45);
+            this.btn_6.TabIndex = 7;
+            this.btn_6.Text = "6";
+            this.btn_6.UseVisualStyleBackColor = false;
+            this.btn_6.Click += new System.EventHandler(this.btn_6_Click);
+            // 
+            // btn_5
+            // 
+            this.btn_5.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_5.FlatAppearance.BorderSize = 0;
+            this.btn_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_5.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_5.ForeColor = System.Drawing.Color.Black;
+            this.btn_5.Location = new System.Drawing.Point(316, 178);
+            this.btn_5.Name = "btn_5";
+            this.btn_5.Size = new System.Drawing.Size(54, 45);
+            this.btn_5.TabIndex = 6;
+            this.btn_5.Text = "5";
+            this.btn_5.UseVisualStyleBackColor = false;
+            this.btn_5.Click += new System.EventHandler(this.btn_5_Click);
+            // 
+            // btn_plus
+            // 
+            this.btn_plus.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_plus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_plus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_plus.FlatAppearance.BorderSize = 0;
+            this.btn_plus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_plus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_plus.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_plus.ForeColor = System.Drawing.Color.Black;
+            this.btn_plus.Location = new System.Drawing.Point(436, 229);
+            this.btn_plus.Name = "btn_plus";
+            this.btn_plus.Size = new System.Drawing.Size(54, 45);
+            this.btn_plus.TabIndex = 12;
+            this.btn_plus.Text = "+";
+            this.btn_plus.UseVisualStyleBackColor = false;
+            this.btn_plus.Click += new System.EventHandler(this.btn_plus_Click);
+            // 
+            // btn_3
+            // 
+            this.btn_3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_3.FlatAppearance.BorderSize = 0;
+            this.btn_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_3.ForeColor = System.Drawing.Color.Black;
+            this.btn_3.Location = new System.Drawing.Point(376, 229);
+            this.btn_3.Name = "btn_3";
+            this.btn_3.Size = new System.Drawing.Size(54, 45);
+            this.btn_3.TabIndex = 11;
+            this.btn_3.Text = "3";
+            this.btn_3.UseVisualStyleBackColor = false;
+            this.btn_3.Click += new System.EventHandler(this.btn_3_Click);
+            // 
+            // btn_2
+            // 
+            this.btn_2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_2.FlatAppearance.BorderSize = 0;
+            this.btn_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_2.ForeColor = System.Drawing.Color.Black;
+            this.btn_2.Location = new System.Drawing.Point(316, 229);
+            this.btn_2.Name = "btn_2";
+            this.btn_2.Size = new System.Drawing.Size(54, 45);
+            this.btn_2.TabIndex = 10;
+            this.btn_2.Text = "2";
+            this.btn_2.UseVisualStyleBackColor = false;
+            this.btn_2.Click += new System.EventHandler(this.btn_2_Click);
+            // 
+            // btn_1
+            // 
+            this.btn_1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_1.FlatAppearance.BorderSize = 0;
+            this.btn_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_1.ForeColor = System.Drawing.Color.Black;
+            this.btn_1.Location = new System.Drawing.Point(256, 229);
+            this.btn_1.Name = "btn_1";
+            this.btn_1.Size = new System.Drawing.Size(54, 45);
+            this.btn_1.TabIndex = 9;
+            this.btn_1.Text = "1";
+            this.btn_1.UseVisualStyleBackColor = false;
+            this.btn_1.Click += new System.EventHandler(this.btn_1_Click);
+            // 
+            // btn_minus
+            // 
+            this.btn_minus.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_minus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_minus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_minus.FlatAppearance.BorderSize = 0;
+            this.btn_minus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_minus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_minus.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_minus.ForeColor = System.Drawing.Color.Black;
+            this.btn_minus.Location = new System.Drawing.Point(436, 280);
+            this.btn_minus.Name = "btn_minus";
+            this.btn_minus.Size = new System.Drawing.Size(54, 45);
+            this.btn_minus.TabIndex = 16;
+            this.btn_minus.Text = "-";
+            this.btn_minus.UseVisualStyleBackColor = false;
+            this.btn_minus.Click += new System.EventHandler(this.btn_minus_Click);
+            // 
+            // btn_equals
+            // 
+            this.btn_equals.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_equals.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_equals.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_equals.FlatAppearance.BorderSize = 0;
+            this.btn_equals.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_equals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_equals.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_equals.ForeColor = System.Drawing.Color.Black;
+            this.btn_equals.Location = new System.Drawing.Point(376, 280);
+            this.btn_equals.Name = "btn_equals";
+            this.btn_equals.Size = new System.Drawing.Size(54, 45);
+            this.btn_equals.TabIndex = 15;
+            this.btn_equals.Text = "=";
+            this.btn_equals.UseVisualStyleBackColor = false;
+            this.btn_equals.Click += new System.EventHandler(this.btn_equals_Click);
+            // 
+            // btn_c
+            // 
+            this.btn_c.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_c.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_c.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_c.FlatAppearance.BorderSize = 0;
+            this.btn_c.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_c.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_c.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_c.ForeColor = System.Drawing.Color.Black;
+            this.btn_c.Location = new System.Drawing.Point(316, 280);
+            this.btn_c.Name = "btn_c";
+            this.btn_c.Size = new System.Drawing.Size(54, 45);
+            this.btn_c.TabIndex = 14;
+            this.btn_c.Text = "C";
+            this.btn_c.UseVisualStyleBackColor = false;
+            this.btn_c.Click += new System.EventHandler(this.btn_c_Click);
+            // 
+            // btn_0
+            // 
+            this.btn_0.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_0.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_0.FlatAppearance.BorderSize = 0;
+            this.btn_0.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_0.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_0.ForeColor = System.Drawing.Color.Black;
+            this.btn_0.Location = new System.Drawing.Point(256, 280);
+            this.btn_0.Name = "btn_0";
+            this.btn_0.Size = new System.Drawing.Size(54, 45);
+            this.btn_0.TabIndex = 13;
+            this.btn_0.Text = "0";
+            this.btn_0.UseVisualStyleBackColor = false;
+            this.btn_0.Click += new System.EventHandler(this.btn_0_Click);
+            // 
+            // btn_8
+            // 
+            this.btn_8.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_8.FlatAppearance.BorderSize = 0;
+            this.btn_8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_8.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_8.ForeColor = System.Drawing.Color.Black;
+            this.btn_8.Location = new System.Drawing.Point(316, 127);
+            this.btn_8.Name = "btn_8";
+            this.btn_8.Size = new System.Drawing.Size(54, 45);
+            this.btn_8.TabIndex = 17;
+            this.btn_8.Text = "8";
+            this.btn_8.UseVisualStyleBackColor = false;
+            this.btn_8.Click += new System.EventHandler(this.btn_8_Click);
+            // 
+            // btn_4
+            // 
+            this.btn_4.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_4.FlatAppearance.BorderSize = 0;
+            this.btn_4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_4.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_4.ForeColor = System.Drawing.Color.Black;
+            this.btn_4.Location = new System.Drawing.Point(256, 178);
+            this.btn_4.Name = "btn_4";
+            this.btn_4.Size = new System.Drawing.Size(54, 45);
+            this.btn_4.TabIndex = 5;
+            this.btn_4.Text = "4";
+            this.btn_4.UseVisualStyleBackColor = false;
+            this.btn_4.Click += new System.EventHandler(this.btn_4_Click);
+            // 
+            // btn_divide
+            // 
+            this.btn_divide.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_divide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_divide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_divide.FlatAppearance.BorderSize = 0;
+            this.btn_divide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_divide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_divide.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_divide.ForeColor = System.Drawing.Color.Black;
+            this.btn_divide.Location = new System.Drawing.Point(436, 127);
+            this.btn_divide.Name = "btn_divide";
+            this.btn_divide.Size = new System.Drawing.Size(54, 45);
+            this.btn_divide.TabIndex = 4;
+            this.btn_divide.Text = "/";
+            this.btn_divide.UseVisualStyleBackColor = false;
+            this.btn_divide.Click += new System.EventHandler(this.btn_divide_Click);
+            // 
+            // btn_9
+            // 
+            this.btn_9.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_9.FlatAppearance.BorderSize = 0;
+            this.btn_9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_9.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_9.ForeColor = System.Drawing.Color.Black;
+            this.btn_9.Location = new System.Drawing.Point(376, 127);
+            this.btn_9.Name = "btn_9";
+            this.btn_9.Size = new System.Drawing.Size(54, 45);
+            this.btn_9.TabIndex = 3;
+            this.btn_9.Text = "9";
+            this.btn_9.UseVisualStyleBackColor = false;
+            this.btn_9.Click += new System.EventHandler(this.btn_9_Click);
+            // 
+            // tb_input
+            // 
+            this.tb_input.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_input.Location = new System.Drawing.Point(256, 76);
+            this.tb_input.Name = "tb_input";
+            this.tb_input.Size = new System.Drawing.Size(234, 40);
+            this.tb_input.TabIndex = 18;
+            this.tb_input.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // tb_history
+            // 
+            this.tb_history.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tb_history.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_history.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_history.Location = new System.Drawing.Point(155, 30);
+            this.tb_history.Name = "tb_history";
+            this.tb_history.Size = new System.Drawing.Size(450, 33);
+            this.tb_history.TabIndex = 19;
+            this.tb_history.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tb_history);
+            this.Controls.Add(this.tb_input);
+            this.Controls.Add(this.btn_8);
+            this.Controls.Add(this.btn_minus);
+            this.Controls.Add(this.btn_equals);
+            this.Controls.Add(this.btn_c);
+            this.Controls.Add(this.btn_0);
+            this.Controls.Add(this.btn_plus);
+            this.Controls.Add(this.btn_3);
+            this.Controls.Add(this.btn_2);
+            this.Controls.Add(this.btn_1);
+            this.Controls.Add(this.btn_x);
+            this.Controls.Add(this.btn_6);
+            this.Controls.Add(this.btn_5);
+            this.Controls.Add(this.btn_4);
+            this.Controls.Add(this.btn_divide);
+            this.Controls.Add(this.btn_9);
+            this.Controls.Add(this.btn_7);
+            this.Name = "MainForm";
+            this.Text = "CALCULATOR VER 2.0";
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button btn_7;
+        private System.Windows.Forms.Button btn_x;
+        private System.Windows.Forms.Button btn_6;
+        private System.Windows.Forms.Button btn_5;
+        private System.Windows.Forms.Button btn_plus;
+        private System.Windows.Forms.Button btn_3;
+        private System.Windows.Forms.Button btn_2;
+        private System.Windows.Forms.Button btn_1;
+        private System.Windows.Forms.Button btn_minus;
+        private System.Windows.Forms.Button btn_equals;
+        private System.Windows.Forms.Button btn_c;
+        private System.Windows.Forms.Button btn_0;
+        private System.Windows.Forms.Button btn_8;
+        private System.Windows.Forms.Button btn_4;
+        private System.Windows.Forms.Button btn_divide;
+        private System.Windows.Forms.Button btn_9;
+        private System.Windows.Forms.TextBox tb_input;
+        private System.Windows.Forms.TextBox tb_history;
+    }
+}
+
