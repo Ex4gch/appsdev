@@ -1,0 +1,226 @@
+namespace Brackets
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.tb_input = new System.Windows.Forms.TextBox();
+            this.lbl_display = new System.Windows.Forms.TextBox();
+            this.btn_parenthesis1 = new System.Windows.Forms.Button();
+            this.btn_square1 = new System.Windows.Forms.Button();
+            this.btn_curly1 = new System.Windows.Forms.Button();
+            this.btn_parenthesis2 = new System.Windows.Forms.Button();
+            this.btn_curly2 = new System.Windows.Forms.Button();
+            this.btn_square2 = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // tb_input
+            // 
+            this.tb_input.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.tb_input.BackColor = System.Drawing.Color.White;
+            this.tb_input.CausesValidation = false;
+            this.tb_input.Font = new System.Drawing.Font("Verdana", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_input.Location = new System.Drawing.Point(223, 178);
+            this.tb_input.Name = "tb_input";
+            this.tb_input.ReadOnly = true;
+            this.tb_input.ShortcutsEnabled = false;
+            this.tb_input.Size = new System.Drawing.Size(360, 66);
+            this.tb_input.TabIndex = 0;
+            this.tb_input.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_input.TextChanged += new System.EventHandler(this.tb_input_TextChanged);
+            // 
+            // lbl_display
+            // 
+            this.lbl_display.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl_display.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbl_display.CausesValidation = false;
+            this.lbl_display.Font = new System.Drawing.Font("NSimSun", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_display.Location = new System.Drawing.Point(124, 76);
+            this.lbl_display.Name = "lbl_display";
+            this.lbl_display.ReadOnly = true;
+            this.lbl_display.ShortcutsEnabled = false;
+            this.lbl_display.Size = new System.Drawing.Size(554, 73);
+            this.lbl_display.TabIndex = 1;
+            this.lbl_display.Text = "TESTINGANAN";
+            this.lbl_display.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btn_parenthesis1
+            // 
+            this.btn_parenthesis1.BackColor = System.Drawing.Color.LightGray;
+            this.btn_parenthesis1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_parenthesis1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_parenthesis1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btn_parenthesis1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_parenthesis1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_parenthesis1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_parenthesis1.Location = new System.Drawing.Point(223, 250);
+            this.btn_parenthesis1.Name = "btn_parenthesis1";
+            this.btn_parenthesis1.Size = new System.Drawing.Size(55, 65);
+            this.btn_parenthesis1.TabIndex = 1;
+            this.btn_parenthesis1.Text = "(";
+            this.btn_parenthesis1.UseVisualStyleBackColor = false;
+            this.btn_parenthesis1.Click += new System.EventHandler(this.btn_parenthesis1_Click);
+            // 
+            // btn_square1
+            // 
+            this.btn_square1.BackColor = System.Drawing.Color.LightGray;
+            this.btn_square1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_square1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_square1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btn_square1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_square1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_square1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_square1.Location = new System.Drawing.Point(284, 250);
+            this.btn_square1.Name = "btn_square1";
+            this.btn_square1.Size = new System.Drawing.Size(55, 65);
+            this.btn_square1.TabIndex = 2;
+            this.btn_square1.Text = "[";
+            this.btn_square1.UseVisualStyleBackColor = false;
+            this.btn_square1.Click += new System.EventHandler(this.btn_square1_Click);
+            // 
+            // btn_curly1
+            // 
+            this.btn_curly1.BackColor = System.Drawing.Color.LightGray;
+            this.btn_curly1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_curly1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_curly1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btn_curly1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_curly1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_curly1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_curly1.Location = new System.Drawing.Point(345, 250);
+            this.btn_curly1.Name = "btn_curly1";
+            this.btn_curly1.Size = new System.Drawing.Size(55, 65);
+            this.btn_curly1.TabIndex = 3;
+            this.btn_curly1.Text = "{";
+            this.btn_curly1.UseVisualStyleBackColor = false;
+            this.btn_curly1.Click += new System.EventHandler(this.btn_curly1_Click);
+            // 
+            // btn_parenthesis2
+            // 
+            this.btn_parenthesis2.BackColor = System.Drawing.Color.LightGray;
+            this.btn_parenthesis2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_parenthesis2.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_parenthesis2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btn_parenthesis2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_parenthesis2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_parenthesis2.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_parenthesis2.Location = new System.Drawing.Point(528, 250);
+            this.btn_parenthesis2.Name = "btn_parenthesis2";
+            this.btn_parenthesis2.Size = new System.Drawing.Size(55, 65);
+            this.btn_parenthesis2.TabIndex = 6;
+            this.btn_parenthesis2.Text = ")";
+            this.btn_parenthesis2.UseVisualStyleBackColor = false;
+            this.btn_parenthesis2.Click += new System.EventHandler(this.btn_parenthesis2_Click);
+            // 
+            // btn_curly2
+            // 
+            this.btn_curly2.BackColor = System.Drawing.Color.LightGray;
+            this.btn_curly2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_curly2.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_curly2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btn_curly2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_curly2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_curly2.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_curly2.Location = new System.Drawing.Point(406, 250);
+            this.btn_curly2.Name = "btn_curly2";
+            this.btn_curly2.Size = new System.Drawing.Size(55, 65);
+            this.btn_curly2.TabIndex = 4;
+            this.btn_curly2.Text = "}";
+            this.btn_curly2.UseVisualStyleBackColor = false;
+            this.btn_curly2.Click += new System.EventHandler(this.btn_curly2_Click);
+            // 
+            // btn_square2
+            // 
+            this.btn_square2.BackColor = System.Drawing.Color.LightGray;
+            this.btn_square2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_square2.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_square2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btn_square2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_square2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_square2.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_square2.Location = new System.Drawing.Point(467, 250);
+            this.btn_square2.Name = "btn_square2";
+            this.btn_square2.Size = new System.Drawing.Size(55, 65);
+            this.btn_square2.TabIndex = 5;
+            this.btn_square2.Text = "]";
+            this.btn_square2.UseVisualStyleBackColor = false;
+            this.btn_square2.Click += new System.EventHandler(this.btn_square2_Click);
+            // 
+            // btn_clear
+            // 
+            this.btn_clear.BackColor = System.Drawing.Color.LightGray;
+            this.btn_clear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_clear.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btn_clear.FlatAppearance.BorderSize = 0;
+            this.btn_clear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
+            this.btn_clear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btn_clear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_clear.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_clear.Location = new System.Drawing.Point(223, 321);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(360, 37);
+            this.btn_clear.TabIndex = 7;
+            this.btn_clear.Text = "CLEAR";
+            this.btn_clear.UseVisualStyleBackColor = false;
+            this.btn_clear.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.button1_KeyPress);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_clear);
+            this.Controls.Add(this.btn_square2);
+            this.Controls.Add(this.btn_curly2);
+            this.Controls.Add(this.btn_parenthesis2);
+            this.Controls.Add(this.btn_curly1);
+            this.Controls.Add(this.btn_square1);
+            this.Controls.Add(this.btn_parenthesis1);
+            this.Controls.Add(this.lbl_display);
+            this.Controls.Add(this.tb_input);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox tb_input;
+        private System.Windows.Forms.TextBox lbl_display;
+        private System.Windows.Forms.Button btn_parenthesis1;
+        private System.Windows.Forms.Button btn_square1;
+        private System.Windows.Forms.Button btn_curly1;
+        private System.Windows.Forms.Button btn_parenthesis2;
+        private System.Windows.Forms.Button btn_curly2;
+        private System.Windows.Forms.Button btn_square2;
+        private System.Windows.Forms.Button btn_clear;
+    }
+}
+
