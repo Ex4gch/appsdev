@@ -1,0 +1,88 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Brackets
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void tb_input_TextChanged(object sender, EventArgs e)
+        {
+            if (isValid(tb_input.Text)) lbl_display.Text = "VALID";
+            else lbl_display.Text = "INVALID";
+        }
+
+        public bool isValid(string s)
+        {
+            if (s.Length % 2 == 1) return false;
+            if (!s.Contains(")") && !s.Contains("}") && !s.Contains("]")) return false;
+            bool isValidValid = true;
+
+            for(int i = 0, j = s.Length - 1; i < j; i++, j--)
+            {
+                if (s[i] == '(' && s[j] == ')') isValidValid = true;
+                else if (s[i] == '[' && s[j] == ']') isValidValid = true;
+                else if (s[i] == '{' && s[j] == '}') isValidValid = true;
+                else return false;
+            }
+
+            return isValidValid;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+                    }
+
+        private void btn_parenthesis1_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "(";
+        }
+
+        private void btn_square1_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "[";
+        }
+
+        private void btn_curly1_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "{";
+        }
+
+        private void btn_curly2_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "}";
+        }
+
+        private void btn_square2_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "]";
+        }
+
+        private void btn_parenthesis2_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += ")";
+        }
+
+        private void button1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            tb_input.Text = "";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tb_input.Text = "";
+            lbl_display.Text = "";
+        }
+    }
+}
