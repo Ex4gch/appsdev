@@ -1,0 +1,319 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Calculator2
+{
+    public partial class MainForm : Form
+    {
+        public MainForm()
+        {
+            InitializeComponent();
+        }
+
+        private void btn_7_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "7";
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_8_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "8";
+        }
+
+        private void btn_9_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "9";
+        }
+
+        private void btn_4_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "4";
+        }
+
+        private void btn_5_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "5";
+        }
+
+        private void btn_6_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "6";
+        }
+
+        private void btn_1_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "1";
+        }
+
+        private void btn_2_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "2";
+        }
+
+        private void btn_3_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "3";
+        }
+
+        private void btn_0_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "0";
+        }
+
+        private void btn_c_Click(object sender, EventArgs e)
+        {
+            tb_input.Text = "";
+            tb_history.Text = "";
+        }
+
+        private void btn_divide_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "/";
+        }
+
+        private void btn_x_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "*";
+        }
+
+        private void btn_plus_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "+";
+        }
+
+        private void btn_minus_Click(object sender, EventArgs e)
+        {
+            tb_input.Text += "-";
+        }
+
+        private void btn_equals_Click(object sender, EventArgs e)
+        {
+            if (tb_input.Text.Equals("")) return;
+            if(!isValid(tb_input.Text))
+            {
+                tb_history.Text = "SYNTAX ERROR";
+                tb_input.Text = "";
+                return;
+            }
+
+            string history = tb_input.Text;
+            Stack<double> numbers = new Stack<double>();
+            Stack<char> operators = new Stack<char>();
+            string num = "";
+            string temp = "";
+            string s = tb_input.Text;
+            bool withMultiplicationOrDivision = false;
+            bool isStartWithNegative = false;
+            int j = 0;
+            int k = 0;
+            if (s[0] == '-')
+            {
+                isStartWithNegative = true;
+                k++;
+            }
+
+            for (int i = k; i < s.Length; i++)
+            {
+                if (!char.IsDigit(s[i]))
+                {
+                    if (s[i] == '+' || s[i] == '-')
+                    {
+                        operators.Push(s[i]);
+                        if (isStartWithNegative)
+                        {
+                            numbers.Push(double.Parse(num) * -1);
+                            isStartWithNegative = false;
+
+                        }
+                        else
+                        {
+                            if (!num.Equals(""))
+                                numbers.Push(double.Parse(num));
+
+                            if (withMultiplicationOrDivision)
+                            {
+                                numbers.Push(calculate2(temp));
+                                temp = "";
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (isStartWithNegative)
+                        {
+                            temp = "-";
+                            isStartWithNegative = false;
+                        }
+
+                        withMultiplicationOrDivision = true;
+                        j = i + 1;
+                        temp += num;
+                        num = "";
+                        temp += s[i];
+                        while (char.IsDigit(s[j]) || s[j] == '-')
+                        {
+                            num += s[j];
+                            if (j == s.Length - 1)
+                            {
+                                temp += num;
+                                num = "";
+                                break;
+                            }
+                            j++;
+                        }
+
+                        temp += num;
+
+                        i = j - 1;
+
+                        if (j == s.Length - 1) break;
+                    }
+
+                    num = "";
+                }
+                else num += s[i];
+
+                if (i == s.Length - 1) numbers.Push(double.Parse(num));
+            }
+
+            if (withMultiplicationOrDivision) numbers.Push(calculate2(temp));
+
+            tb_input.Text = calculate(numbers, operators).ToString();
+            tb_history.Text = history;
+        }
+
+        public double calculate(Stack<double> numbers, Stack<char> operators)
+        {
+            double result = 0;
+            double operand1;
+            double operand2;
+
+            while (numbers.Count() != 1)
+            {
+                operand2 = numbers.Pop();
+                operand1 = numbers.Pop();
+
+                switch (operators.Pop())
+                {
+                    case '+':
+                        result = operand1 + operand2;
+                        break;
+                    case '-':
+                        result = operand1 - operand2;
+                        break;
+                    case '*':
+                        result = operand1 * operand2;
+                        break;
+                    case '/':
+                        result = operand1 / operand2;
+                        break;
+                }
+
+                numbers.Push(result);
+            }
+
+            return numbers.Peek();
+        }
+
+        public double calculate2(string s)
+        {
+            Stack<double> numbers = new Stack<double>();
+            Stack<char> operators = new Stack<char>();
+            string num = "";
+            int j = 0;
+            bool isStartWithNegative = false;
+
+            if (s[0] == '-')
+            {
+                isStartWithNegative = true;
+                j++;
+            }
+
+            for (; j < s.Length; j++)
+            {
+                if (!char.IsDigit(s[j]))
+                {
+                    break;
+                }
+                else num += s[j];
+            }
+
+            double total;
+
+            if (isStartWithNegative) total = double.Parse(num) * -1;
+            else
+            {
+                total = double.Parse(num);
+            }
+
+            char currentOperator = s[j];
+            num = "";
+
+            for (int i = j + 1; i < s.Length; i++)
+            {
+                if (!char.IsDigit(s[i]))
+                {
+                    if (s[i] == '-')
+                    {
+                        num += s[i];
+                        continue;
+                    }
+                    switch (currentOperator)
+                    {
+                        case '*':
+                            total *= double.Parse(num);
+                            break;
+                        case '/':
+                            total /= double.Parse(num);
+                            break;
+                    }
+
+                    currentOperator = s[i];
+                    num = "";
+                }
+                else num += s[i];
+
+                if (i == s.Length - 1)
+                {
+                    switch (currentOperator)
+                    {
+                        case '*':
+                            total *= double.Parse(num);
+                            break;
+                        case '/':
+                            total /= double.Parse(num);
+                            break;
+                    }
+                }
+            }
+
+            return total;
+        }
+
+        public bool isValid(string s)
+        {
+            if (!char.IsDigit(s[0]) && s[0] != '-') return false;
+            for(int i = 1; i < s.Length - 1; i++)
+            {
+                if (!char.IsDigit(s[i]) && !char.IsDigit(s[i + 1]) && s[i + 1] != '-') return false;
+            }
+            if (!char.IsDigit(s[s.Length - 1])) return false;
+
+            return true;
+        }
+
+    }
+}
+
